@@ -1,5 +1,5 @@
 <?php
-    include('inc/process.php');
+    include('../../inc/process.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
