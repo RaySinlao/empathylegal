@@ -62,9 +62,9 @@
     </script>
 
     <script>
-        gtag('config', 'AW-378169757/6yT3CJWdra4DEJ3TqbQB', {
-            'phone_conversion_number': PhoneNumber
-        });
+        //gtag('config', 'AW-378169757/6yT3CJWdra4DEJ3TqbQB', {
+        //    'phone_conversion_number': Phone_Number
+        //});
 
         function gtag_report_conversion(url) {
             var callback = function() {
@@ -819,6 +819,93 @@
         </section>
 
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        
+        $(document).on('keyup', '[name=Phone_Number]', function() {
+            telephone = $(this).val();
+            telephone = telephone.replace(/\D/g,'');
+
+            $('[name=Telephone]').val(telephone);
+        });
+
+        $(document).on('paste', '[name=Phone_Number]', function() {
+            telephone = $(this).val();
+
+            setTimeout(function () {
+                telephone = telephone.replace(/\D/g,'');
+
+                $('[name=Telephone]').val(telephone);
+            }, 100);
+        });
+
+        $(document).on('click', '[name=submit_hurricane]', function() {
+            error = 0;
+            msg = '';
+
+            fname = $('[name=First_Name]').val();
+            lname = $('[name=Last_Name]').val();
+            email = $('[name=Email_Address]').val();
+            telephone = $('[name=Phone_Number]').val();
+
+            damage_type = $('[name=Type_of_Damage] :selected').val();
+            damage_description = $('[name=Damage_Description] :selected').val();
+            insurance = $('[name=Have_Insurance] :selected').val();
+            state = $('[name=State] :selected').val();
+
+            if (damage_type == '' || damage_description == '' || insurance == '' || fname == '' || lname == '' || email == '' || telephone == '' || state == '') {
+                error = 1;
+
+                if (fname == '') {
+                    msg += "First Name is required.\n";
+                }
+
+                if (lname == '') {
+                    msg += "Last Name is required.\n";
+                }
+
+                if (email == '') {
+                    msg += "Email Address is required.\n";
+                }
+
+                if (telephone == '' || telephone.length < 10) {
+                    msg += "Phone Number must be 10 digits.\n";
+                }
+
+                if (state == '') {
+                    msg += "Please select a state.\n";
+                }
+
+                if (msg != '') {
+                    msg += "\n";
+                }
+
+                if (damage_type == '' || damage_description == '' || insurance == '') {
+                    msg += "You did not select an option to the question(s):\n";
+                 }
+
+                if (damage_type == '') {
+                    msg += "- What primary type of damage occurred to your property?\n";
+                }
+
+                if (damage_description == '') {
+                    msg += "- What best describes your damage loss?\n";
+                }
+
+                if (insurance == '') {
+                    msg += "- Do you have Homeowners Insurance?\n";
+                }
+
+                alert(msg);
+            }
+
+            if (error == 1) {
+                return false;
+            }
+        });
+    </script>
 </body>
 
 </html>
