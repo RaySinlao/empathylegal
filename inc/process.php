@@ -48,14 +48,14 @@
 		} else {
 			// Send Success
 			$Response = curl_exec($ch);
-			var_dump($Response);
 			curl_close($ch);
+
+			header("Location: https://thanks.injurysurvey.com/");
+			die();
 		}
 	}
 
 	if (isset($_POST['submit_hurricane'])) {
-		//var_dump($_POST);
-
 		$First_Name = validate_field($_POST["First_Name"]);
 		$Last_Name = validate_field($_POST["Last_Name"]);
 		$Email_Address = validate_field($_POST["Email_Address"]);
@@ -64,8 +64,6 @@
 		$Damage_Description = validate_field($_POST["Damage_Description"]);
 		$Have_Insurance = validate_field($_POST["Have_Insurance"]);
 		$State = validate_field($_POST["State"]);
-
-		//$State = $_POST["State"];
 
 		$mapped = array();
 		$mapped['apiId'] = '745E04DD7B5B401E800DC89C488860C4';
@@ -106,8 +104,10 @@
 		} else {
 			// Send Success
 			$Response = curl_exec($ch);
-			var_dump($Response);
 			curl_close($ch);
+
+			header("Location: https://www.disaster-claims.com/submitted");
+			die();
 		}
 	}
 
