@@ -1,5 +1,5 @@
 <?php
-    include('inc/process.php');
+   // include('inc/process.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -111,7 +111,7 @@
 
                             <label class="form-label-title form-label-outside form-label" for="field-268126faadda44fd976125ce9ca69bd6-2" data-at="form-select-title">Were you diagnosed with any of these cancers after using the device?</label>
                             <div class="form-block-select">
-                                <select id="field-268126faadda44fd976125ce9ca69bd6-2" class="form-input form-select required   " data-at="form-select" name="Cancer" data-describedby="form-validation-error-box-element-442"
+                                <select id="field-268126faadda44fd976125ce9ca69bd6-2" class="form-input form-select required" data-at="form-select" name="Cancer" data-describedby="form-validation-error-box-element-442"
                                     title="Were you diagnosed with any of these cancers after using the device?" required aria-required="true"><!-- name="Were you diagnosed with any of these cancers after using the device?" -->
 								    <option class="hidden" value="" disabled="" selected="">-- Select one--</option>
 								    <option class="form-select-option" value="Acute Myeloid Leukemia" data-at="form-select-option">Acute Myeloid Leukemia</option>
@@ -160,24 +160,21 @@
                             </div>
 
                             <label class="form-label-title form-label-outside form-label" for="field-268126faadda44fd976125ce9ca69bd6-3" data-at="form-text-title">First Name</label>
-                            <input id="field-268126faadda44fd976125ce9ca69bd6-3" class="form-input form-input-text required  " data-at="form-text" type="text" name="First_Name" data-describedby="form-validation-error-box-element-442" value="" title="First Name" placeholder="" data-label-inside="First Name"
-                                required aria-required="true" />
+                            <input id="field-268126faadda44fd976125ce9ca69bd6-3" class="form-input form-input-text required  " data-at="form-text" type="text" name="First_Name" data-describedby="form-validation-error-box-element-442" value="" title="First Name" placeholder="" data-label-inside="First Name" required aria-required="true" />
 
                             <label class="form-label-title form-label-outside form-label" for="field-268126faadda44fd976125ce9ca69bd6-4" data-at="form-text-title">Last Name</label>
-                            <input id="field-268126faadda44fd976125ce9ca69bd6-4" class="form-input form-input-text required  " data-at="form-text" type="text" name="Last_Name" data-describedby="form-validation-error-box-element-442" value="" title="Last Name" placeholder="" data-label-inside="Last Name"
-                                required aria-required="true" />
+                            <input id="field-268126faadda44fd976125ce9ca69bd6-4" class="form-input form-input-text required  " data-at="form-text" type="text" name="Last_Name" data-describedby="form-validation-error-box-element-442" value="" title="Last Name" placeholder="" data-label-inside="Last Name" required aria-required="true" />
 
                             <label class="form-label-title form-label-outside form-label" for="field-268126faadda44fd976125ce9ca69bd6-5" data-at="form-email-title">Email</label>
-                            <input id="field-268126faadda44fd976125ce9ca69bd6-5" class="form-input form-input-text required  " type="email" name="Email" data-describedby="form-validation-error-box-element-442" value="" title="Email" data-label-inside="Email" data-at="form-email"
+                            <input id="field-268126faadda44fd976125ce9ca69bd6-5" class="form-input form-input-text required" type="email" name="Email" data-describedby="form-validation-error-box-element-442" value="" title="Email" data-label-inside="Email" data-at="form-email"
                                 placeholder="" required aria-required="true" />
 
                             <label class="form-label-title form-label-outside form-label" for="field-268126faadda44fd976125ce9ca69bd6-6" data-at="form-text-title">Telephone - 10 Digits Only</label>
-                            <input id="field-268126faadda44fd976125ce9ca69bd6-6" class="form-input form-input-text required  form-input-mask" data-at="form-text" type="text" name="Telephone" data-describedby="form-validation-error-box-element-442" value="" title="Telephone - 10 Digits Only"
-                                data-mask="(000) 000-0000" pattern="[0-9]*" inputmode="numeric" placeholder="" data-label-inside="Telephone - 10 Digits Only" required aria-required="true" />
+                            <input id="field-268126faadda44fd976125ce9ca69bd6-6" class="form-input form-input-text required  form-input-mask" data-at="form-text" type="text" name="Telephone" data-describedby="form-validation-error-box-element-442" value="" title="Telephone - 10 Digits Only" data-mask="(000) 000-0000" pattern="[0-9]*" inputmode="numeric" placeholder="" data-label-inside="Telephone - 10 Digits Only" required aria-required="true" />
 
                             <label class="form-label-title form-label-outside form-label" for="field-268126faadda44fd976125ce9ca69bd6-7" data-at="form-select-title">Is an attorney representing your case?</label>
                             <div class="form-block-select">
-                                <select id="field-268126faadda44fd976125ce9ca69bd6-7" class="form-input form-select required   " data-at="form-select" name="represented" data-describedby="form-validation-error-box-element-442" title="Is an attorney representing your case?"
+                                <select id="field-268126faadda44fd976125ce9ca69bd6-7" class="form-input form-select required" data-at="form-select" name="represented" data-describedby="form-validation-error-box-element-442" title="Is an attorney representing your case?"
                                     required aria-required="true"><!-- name="Is an attorney representing your case?" -->
 								    <option class="hidden" value="" disabled="" selected="">-- Select one--</option>
 								    <option class="form-select-option" value="Yes" data-at="form-select-option">Yes</option>
@@ -188,11 +185,11 @@
                             <div class="form-checkable-field">
                                 <label for="field-268126faadda44fd976125ce9ca69bd6-8" class="form-label-title form-label form-label-checkbox" data-at="form-checkbox-title">By clicking the Submit button, I consent to be contacted by Injury Survey LLC (injurysurvey.com) at the number I provided.</label>
                                 <div class="form-block-checkbox">
-                                    <input id="hidden-field-268126faadda44fd976125ce9ca69bd6-8-0" class="hidden-checkbox" type="hidden" name="By clicking the Submit button, I consent to be contacted by Injury Survey LLC (injurysurvey.com) at the number I provided.::INSTAPAGE_BOX::By clicking the “Submit” button below, I hereby grant my express written consent and authorize Injury Survey LLC, and its affiliates and law firm partners, to contact me about their services at the phone number and email address provided above/below. I consent to receiving telemarketing calls and text messages using an automatic telephone dialing system or prerecorded voice. I understand that the express written consent I provide here is not required in order to purchase any good or service. I also acknowledge and agree to the Terms &amp; Conditions.  Text Message frequency may vary.  Message &amp; Data rates may apply.  You may opt-out of SMS at any time by replying STOP to the phone number we texted you from.  Reply HELP for help to the phone number we texted you from to get help.  You may view our SMS Terms &amp; Privacy policy. (https://injurysurvey.com/privacy)"
-                                        value="no" />
-                                    <input id="field-268126faadda44fd976125ce9ca69bd6-8-0" class="form-multiple-input required" data-at="form-checkbox" type="checkbox" name="By clicking the Submit button, I consent to be contacted by Injury Survey LLC (injurysurvey.com) at the number I provided."
+                                    <!--<input id="hidden-field-268126faadda44fd976125ce9ca69bd6-8-0" class="hidden-checkbox" type="hidden" name="By clicking the Submit button, I consent to be contacted by Injury Survey LLC (injurysurvey.com) at the number I provided.::INSTAPAGE_BOX::By clicking the “Submit” button below, I hereby grant my express written consent and authorize Injury Survey LLC, and its affiliates and law firm partners, to contact me about their services at the phone number and email address provided above/below. I consent to receiving telemarketing calls and text messages using an automatic telephone dialing system or prerecorded voice. I understand that the express written consent I provide here is not required in order to purchase any good or service. I also acknowledge and agree to the Terms &amp; Conditions.  Text Message frequency may vary.  Message &amp; Data rates may apply.  You may opt-out of SMS at any time by replying STOP to the phone number we texted you from.  Reply HELP for help to the phone number we texted you from to get help.  You may view our SMS Terms &amp; Privacy policy. (https://injurysurvey.com/privacy)"
+                                        value="no" />-->
+                                    <input id="field-268126faadda44fd976125ce9ca69bd6-8-0" class="form-multiple-input required" data-at="form-checkbox" type="checkbox" name="confirmation"
                                         data-describedby="form-validation-error-box-element-" value="By clicking the “Submit” button below, I hereby grant my express written consent and authorize Injury Survey LLC, and its affiliates and law firm partners, to contact me about their services at the phone number and email address provided above/below. I consent to receiving telemarketing calls and text messages using an automatic telephone dialing system or prerecorded voice. I understand that the express written consent I provide here is not required in order to purchase any good or service. I also acknowledge and agree to the Terms &amp; Conditions.  Text Message frequency may vary.  Message &amp; Data rates may apply.  You may opt-out of SMS at any time by replying STOP to the phone number we texted you from.  Reply HELP for help to the phone number we texted you from to get help.  You may view our SMS Terms &amp; Privacy policy. (https://injurysurvey.com/privacy)"
-                                        required aria-required="false" />
+                                        required aria-required="false" /><!-- name="By clicking the Submit button, I consent to be contacted by Injury Survey LLC (injurysurvey.com) at the number I provided." -->
                                     <label class="form-multiple-label form-checkbox-label form-label" for="field-268126faadda44fd976125ce9ca69bd6-8-0" data-at="form-checkbox-label">By clicking the “Submit” button below, I hereby grant my express written consent and authorize Injury Survey LLC, and its affiliates and law firm partners, to contact me about their services at the phone number and email address provided above/below. I consent to receiving telemarketing calls and text messages using an automatic telephone dialing system or prerecorded voice. I understand that the express written consent I provide here is not required in order to purchase any good or service. I also acknowledge and agree to the Terms & Conditions.  Text Message frequency may vary.  Message & Data rates may apply.  You may opt-out of SMS at any time by replying STOP to the phone number we texted you from.  Reply HELP for help to the phone number we texted you from to get help.  You may view our SMS Terms & Privacy policy. (https://injurysurvey.com/privacy)</label>
                                 </div>
                             </div>
@@ -327,6 +324,98 @@
         </section>
 
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        
+        $(document).on('keyup', '[name=Telephone]', function() {
+            telephone = $(this).val();
+            telephone = telephone.replace(/\D/g,'');
+
+            $('[name=Telephone]').val(telephone);
+        });
+
+        $(document).on('paste', '[name=Telephone]', function() {
+            telephone = $(this).val();
+
+            setTimeout(function () {
+                telephone = telephone.replace(/\D/g,'');
+
+                $('[name=Telephone]').val(telephone);
+            }, 100);
+        });
+
+        $(document).on('click', '[name=submit_cpap]', function() {
+            error = 0;
+            msg = '';
+
+            cpap = $('[name=CPAP] :selected').val();
+            length_use = $('[name=length_use] :selected').val();
+            cancer = $('[name=Cancer] :selected').val();
+            fname = $('[name=First_Name]').val();
+            lname = $('[name=Last_Name]').val();
+            email = $('[name=Email]').val();
+            telephone = $('[name=Telephone]').val();
+            represented = $('[name=represented] :selected').val();
+            confirmation = $('[name=confirmation]:checked').length;
+
+            if (cpap == '' || length_use == '' || cancer == '' || fname == '' || lname == '' || email == '' || telephone == '' || represented == '' || confirmation == 0) {
+                error = 1;
+
+                if (cpap == '' || length_use == '' || cancer == '' || represented == '') {
+                    msg += "You did not select an option to the question(s):\n";
+                 }
+
+                if (cpap == '') {
+                    msg += "- Did you use a Phillips CPAP, BiPAP ,APAP or Mechanical Ventilators machine?\n";
+                }
+
+                if (length_use == '') {
+                    msg += "- How long did you or a loved use a CPAP device?\n";
+                }
+
+                if (cancer == '') {
+                    msg += "- Were you diagnosed with any of these cancers after using the device?\n";
+                }
+
+                if (represented == '') {
+                    msg += "- Is an attorney representing your case?\n";
+                }
+
+                if (msg != '') {
+                    msg += "\n";
+                }
+
+                if (fname == '') {
+                    msg += "First Name is required.\n";
+                }
+
+                if (lname == '') {
+                    msg += "Last Name is required.\n";
+                }
+
+                if (email == '') {
+                    msg += "Email is required.\n";
+                }
+
+                if (telephone == '' || telephone.length < 10) {
+                    msg += "Telephone must be 10 digits.\n";
+
+                }
+
+                if (confirmation == 0) {
+                    msg += "You must agree to grant consent and check checkbox.";
+                }
+
+                alert(msg);
+            }
+
+            if (error == 1) {
+                return false;
+            }
+        });
+    </script>
 </body>
 
 </html>
