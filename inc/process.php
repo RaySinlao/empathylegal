@@ -12,7 +12,6 @@
 		$mapped = array();
 		$mapped['apiId'] = '52696FFFECA44C068F2EE48A2D76D323';
 		$mapped['apiPassword'] = 'b8e4ff389';
-		$mapped['testMode'] = '1';
 		$mapped['productId'] = '197';
 		$mapped['price'] = '15';
 		$mapped['trustedFormURL'] = '';
@@ -68,7 +67,6 @@
 		$mapped = array();
 		$mapped['apiId'] = '745E04DD7B5B401E800DC89C488860C4';
 		$mapped['apiPassword'] = '3c93735';
-		$mapped['testMode'] = '1';
 		$mapped['productId'] = '196';
 		$mapped['price'] = '15';
 		$mapped['trustedFormURL'] = 'https://cert.trustedform.com/53de80fad97f562774a6d93d11a4452e3e0b5c2f';
