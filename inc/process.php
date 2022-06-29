@@ -71,8 +71,8 @@
 		$mapped['price'] = '15';
 		$mapped['trustedFormURL'] = 'https://cert.trustedform.com/53de80fad97f562774a6d93d11a4452e3e0b5c2f';
 		$mapped['jornayaLeadId'] = '';
-		$mapped['email'] = 'ver_143@gmail.com';
-		$mapped['phoneNumber'] = '1234567890';
+		$mapped['email'] = $Email_Address;
+		$mapped['phoneNumber'] = $Phone_Number;
 		$mapped['firstName'] = $First_Name;
 		$mapped['lastName'] = $Last_Name;
 		$mapped['criteria1'] = 'What primary type of damage occurred to your property? ' . $Type_of_Damage;
