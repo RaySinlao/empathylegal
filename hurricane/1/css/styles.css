@@ -1,0 +1,555 @@
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    width: 100%;
+    font-family: Lato;
+    font-weight: 400;
+    background: rgb(255, 255, 255);
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+
+select,
+input {
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #959595;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.625rem 0.5625rem;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+.btn {
+    border: 2px solid #098CFF;
+    background: #098CFF;
+    color: #FFFFFF;
+    font-size: 1.1146rem;
+    font-family: Lato;
+    font-weight: 700;
+    border-radius: 41px;
+    cursor: pointer;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    border: 2px solid #098CFF;
+    color: #098CFF;
+}
+
+.head__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head__inner h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.head__inner h2 span {
+    color: #098cff;
+}
+
+.banner__wrap {
+    background: url("../img/61660966-0-pexels-emre-can-acer.jpg") repeat rgb(124, 129, 135) 52% 66% / cover;
+    padding: 120px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner__wrap h4 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.banner__wrap h4 span {
+    color: #098cff;
+}
+
+.banner__wrap h2 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.overlay__bg {
+    opacity: 0.78;
+    background-color: #000000;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.form__wrap {
+    padding: 50px 0;
+}
+
+.form__wrap h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.form__wrap h2 {
+    font-size: 30px;
+    color: #098cff;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.form__wrap h6 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #0080f0;
+}
+
+.form__wrap h6 a {
+    color: #000;
+    text-decoration: none;
+}
+
+.form__review {
+    background: rgb(220, 224, 227);
+    opacity: 0.82;
+    padding: 30px;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.form__review form label {
+    font-size: 14px;
+}
+
+.form__review h2 {
+    font-size: 20px;
+    color: #0080f0;
+    text-align: center;
+}
+
+.form__btn {
+    background: #0080F0;
+    color: #FFFFFF;
+    font-size: 1.0526rem;
+    font-family: Roboto;
+    font-weight: 700;
+    height: 2.6875rem;
+    width: 12.5rem;
+    border-radius: 41px;
+    margin: 20px auto 0;
+    border: 0;
+    transform: translateX(40%);
+    box-shadow: 0 1px 3px rgb(1 1 1 / 50%);
+}
+
+.form__btn:hover {
+    background: #006197;
+    color: #FFFFFF;
+}
+
+.form__review small {
+    font-size: 11px;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+.claim__wrap {
+    padding: 50px 0;
+    background: #DCE0E3;
+    text-align: center;
+}
+
+.claim__wrap h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.claim__wrap img {
+    width: 170px;
+}
+
+.accordion__wrap {
+    padding: 80px 0;
+}
+
+.accordion__wrap h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #0080F0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.accordion__wrap h4 {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.accordion-section {
+    font-family: proxima-nova-1, proxima-nova-2, sans-serif;
+    padding-bottom: 30px;
+}
+
+.accordion:first-of-type {
+    margin-top: 0;
+}
+
+.accordion {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: 0.15s;
+    cursor: pointer;
+    justify-content: flex-start;
+    color: #000000;
+    line-height: 1;
+    font-size: 0.9907rem !important;
+    text-align: left;
+    font-weight: 500!important;
+    padding: 15px 20px;
+    font-weight: 300;
+    border: 1px solid #d4d4d4;
+}
+
+.accordion p {
+    padding-right: 1rem;
+    margin-bottom: 0;
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+}
+
+.panel:last-of-type {
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.panel p {
+    text-align: left;
+    line-height: 1.625rem;
+    font-size: 0.9907rem !important;
+    color: #000;
+    margin: 0;
+    font-weight: 300;
+    padding: 15px 20px;
+}
+
+.panel span {
+    display: block;
+    text-align: left;
+    line-height: 1.625rem;
+    font-size: 0.938rem;
+    color: #000;
+    padding-left: 0;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+p.no-margin {
+    margin: 0;
+}
+
+.panel p a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.accordion.active+.panel {
+    text-align: left;
+}
+
+span.accordion-item__icon::before {
+    font-family: proxima-nova-1, proxima-nova-2, sans-serif;
+    content: "\25B6";
+    width: 20px;
+    height: 20px;
+    background: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #5a5a5a;
+    text-align: center;
+    position: relative;
+    padding: 0.1rem 0.1rem;
+}
+
+span.accordion-item__icon {
+    margin-right: 0.5rem;
+}
+
+.accordion.active .accordion-item__icon:before {
+    content: "\25BC";
+    top: 2px;
+}
+
+.img__wrapper {
+    height: 24.25rem;
+    background: url(../img/61661074-0-email-ads-800--600-p.jpg) repeat 50% 50% / cover;
+}
+
+.col__wrap {
+    margin-top: 80px;
+}
+
+.col__wrap h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #0080F0;
+    margin-bottom: 30px;
+}
+
+.col__wrap .col-6:nth-of-type(2) {
+    padding: 80px 50px 0;
+}
+
+.col__wrap .col-6:nth-of-type(2) a {
+    border: 2px solid #098CFF;
+    color: #098CFF;
+    font-size: 0.8669rem;
+    font-family: Arial;
+    font-weight: 700;
+    padding: 7px 0;
+    width: 11.3125rem;
+    border-radius: 41px;
+    display: block;
+    text-align: center;
+}
+
+.col__wrap .col-6:nth-of-type(2) a:hover {
+    background-color: #098CFF;
+    color: #fff;
+}
+
+.col__wrap .col-6:nth-of-type(1) {
+    border-radius: 20px;
+    background-color: #dce0e3;
+    padding: 90px 40px;
+}
+
+.col__wrap .col-6:nth-of-type(1) a {
+    border: 2px solid #098CFF;
+    color: #fff;
+    background: #098CFF;
+    font-size: 0.8669rem;
+    font-family: Arial;
+    font-weight: 700;
+    padding: 7px 0;
+    width: 11.3125rem;
+    border-radius: 41px;
+    display: block;
+    text-align: center;
+}
+
+.col__wrap .col-6:nth-of-type(1) a:hover {
+    background-color: #fff;
+    color: #098CFF;
+}
+
+.call__us__wrap {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.call__us__wrap h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.call__us__wrap img {
+    width: 200px;
+}
+
+.call__btn {
+    border: 2px solid #098CFF;
+    background: #098CFF;
+    color: #FFFFFF;
+    font-size: 1.2384rem;
+    font-family: Arial;
+    font-weight: 700;
+    padding: 15px 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 26.6875rem;
+    border-radius: 41px;
+    display: inline-block;
+    box-shadow: 0 1px 3px rgb(1 1 1 / 50%);
+}
+
+.call__btn:hover {
+    background: #0080F0;
+    color: #FFFFFF;
+}
+
+footer {
+    background-color: #000;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer span {
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+}
+
+@media only screen and (max-width: 860px) and (min-width: 650px) {
+    .col__wrap {
+        padding: 0 20px;
+    }
+    .banner__wrap {
+        padding: 70px 0;
+    }
+    .banner__wrap h2 {
+        font-size: 36px;
+    }
+    .banner__wrap h2,
+    .banner__wrap h4 {
+        padding: 0 100px;
+    }
+    .form__btn {
+        transform: translateX(28%);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .call__btn,
+    .form__review,
+    main {
+        width: 100%;
+    }
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+    .head__inner h2 {
+        font-size: 15px;
+    }
+    .btn {
+        padding: 6px 20px;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .form__review h2 {
+        font-size: 21px;
+    }
+    .banner__wrap h4 {
+        font-size: 18px;
+    }
+    .banner__wrap h2 {
+        font-size: 35px;
+    }
+    .banner__wrap {
+        padding: 120px 0 32px;
+    }
+    .form__wrap .row {
+        flex-direction: column-reverse;
+    }
+    .col__wrap .col-6:nth-of-type(1),
+    .col__wrap .col-6:nth-of-type(2) {
+        padding: 30px;
+    }
+    .col__wrap .col-6,
+    .form__wrap .col-6 {
+        width: 100%;
+    }
+    .col__wrap {
+        margin-top: 27px;
+    }
+    .form__wrap .col-6:last-child {
+        margin-bottom: 40px;
+    }
+    .form__btn {
+        transform: translateX(21%);
+    }
+    .claim__wrap h2 {
+        font-size: 23px;
+    }
+    .claim__wrap img {
+        width: 94px;
+    }
+    .claim__wrap p {
+        font-size: 10px;
+    }
+    .claim__wrap {
+        padding: 30px 0 13px;
+    }
+    .accordion__wrap h2 {
+        font-size: 24px;
+    }
+    .accordion__wrap h2 br {
+        display: none
+    }
+    .accordion__wrap h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .accordion__wrap {
+        padding: 35px 0;
+    }
+    .img__wrapper {
+        background: url(../img/61661074-0-email-ads-800--600-p.jpg) repeat 82% 50% / cover;
+    }
+    .call__us__wrap {
+        padding: 0 0 50px
+    }
+    .call__us__wrap h2 {
+        font-size: 21px;
+    }
+    .call__btn {
+        font-size: 17px;
+        padding: 9px 20px;
+        margin-top: 20px;
+        margin-bottom: 22px;
+    }
+}
