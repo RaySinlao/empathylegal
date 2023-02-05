@@ -2823,6 +2823,9 @@ button.search-button:before{content: "\e922";}
         background: #5b4d5c;
       }
 
+  .item-info a:hover{
+    text-decoration: none!important;
+  }
   .our-info > p{
     display: block;
   }
